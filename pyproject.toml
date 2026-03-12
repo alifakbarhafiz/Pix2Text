@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pix2text"
+version = "0.1.0"
+description = "Point clouds to text descriptions via contrastive learning (ModelNet40 + DistilBERT)"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "torch",
+    "numpy",
+    "transformers",
+    "tqdm",
+    "plotly",
+]
+
+[project.optional-dependencies]
+dev = []
+
+[tool.setuptools.package-dir]
+pix2text = "."
+pix2text.data = "data"
+pix2text.models = "models"
+pix2text.training = "training"
+pix2text.evaluation = "evaluation"
+pix2text.inference = "inference"
+pix2text.viz = "viz"
+
+[tool.setuptools]
+packages = ["pix2text", "pix2text.data", "pix2text.models", "pix2text.training", "pix2text.evaluation", "pix2text.inference", "pix2text.viz"]

@@ -1,0 +1,23 @@
+# python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# checkpoints and data (often large)
+*.pt
+*.npz
+*.zip
+ModelNet40/
+
+# ide / os
+.idea/
+.vscode/
+.DS_Store
+*.swp
+*~
