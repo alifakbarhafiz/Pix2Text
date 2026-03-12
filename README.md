@@ -103,9 +103,9 @@ If you clone this repo into Colab, follow these steps. You can paste each block 
 ### 1. Clone the repo and install
 
 ```python
-# Clone (replace with your repo URL)
-!git clone https://github.com/YOUR_USERNAME/pix2text.git
-%cd pix2text
+# Clone this repo
+!git clone https://github.com/alifakbarhafiz/Pix2Text.git
+%cd Pix2Text
 
 # Install the package and dependencies (Colab has PyTorch; we need transformers, plotly, etc.)
 !pip install -e .
