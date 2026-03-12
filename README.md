@@ -1,5 +1,7 @@
 # Pix2Text: Point Clouds → Text Descriptions
 
+![Pix2Text](pix2text_demo.png)
+
 **Pix2Text** learns a shared embedding space for **3D point clouds** and **natural language**, so that a 3D shape can be "described" by matching it to the closest text (e.g. class name) in that space. It uses contrastive learning (InfoNCE) on [ModelNet40](https://modelnet.cs.princeton.edu/) with a PointNet-style encoder for geometry and DistilBERT for text.
 
 ---
